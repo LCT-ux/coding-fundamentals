@@ -1,0 +1,35 @@
+.menu {    
+    /* Style for menu button */
+    color: black;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+  }
+  
+  .submenu {    
+    /* Hide submenu */
+    display: none;
+    position: absolute;
+  }
+
+  .submenu-item {
+    color: black;
+    background-color: lightgrey;
+    display: block;
+    padding:10px 30px 10px 10px;
+    border:none;
+    font-size: 16px;
+  }
+  
+  .menu:hover .submenu {    
+    /* Show submenu on hover */
+    display: block;
+    cursor: pointer;
+  }
+
+  .submenu-item:hover{
+    background-color: grey;
+  }
+  
