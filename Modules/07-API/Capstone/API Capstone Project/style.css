@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cat-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Set width for desktop layout */
+    float: left; /* To arrange cards in a row */
+    box-sizing: border-box; /* To include padding and border in width calculation */
+  }
+
+  .cat-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .cat-card {
+      width: calc(100% - 20px); /* Adjust width for mobile layout */
+      float: none; /* Remove floating for mobile layout */
+    }
+  }
+  
+  
